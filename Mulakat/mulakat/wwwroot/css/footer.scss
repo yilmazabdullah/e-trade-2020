@@ -1,0 +1,58 @@
+/*
+@include width(20%, 48px);
+@extend %garanti;
+*/
+@import './frames.scss';
+
+footer {
+	position: absolute;
+	@include width(100%, auto);
+	@extend %garanti;
+	left: 0;
+	background-color: $first-color;
+}
+.footer-alani {
+	@extend %garanti;
+	@include width(90%, auto);
+	padding: 20px 0;
+}
+.footer-ust-alan {
+	@extend %garanti;
+	@include width(90%, auto);
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+	div {
+		@extend %garanti;
+		@include width(20%, auto);
+		h3,
+		img,
+		p {
+			@extend %garanti;
+			@include width(100%, auto);
+		}
+	}
+}
+.footer-alt-alan {
+	border-top: $border;
+	padding-top: 10px;
+	@extend .footer-ust-alan;
+	.copy-right {
+		padding-top: 50px;
+	}
+	.bize-ulasin {
+		div {
+			margin: 0;
+			display: flex;
+			@include width(100%, auto);
+			a {
+				padding-top: 4px;
+				img {
+					@include width(60%, auto);
+					clip-path: circle();
+					//margin-left: 4px;
+				}
+			}
+		}
+	}
+}

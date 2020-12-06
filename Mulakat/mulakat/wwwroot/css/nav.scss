@@ -1,0 +1,106 @@
+@import './frames.scss';
+
+header {
+	background-color: $first-color;
+	@extend %garanti;
+	position: absolute;
+	top: 0;
+	left: 0;
+	//z-index: -99;
+	@include width(100%, 14vh);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-ust-alan {
+	@extend %garanti;
+	@include width(90%, 48px);
+	//background-color: wheat;
+	ul {
+		// display: grid;
+		// grid: 'item1 item2 item2 item2 item2 item3 item4';
+		// grid-gap: 0;
+		@extend %garanti;
+		display: flex;
+		.li-item1 {
+			@include width(20%, 48px);
+			@extend %garanti;
+			a {
+				display: flex;
+				align-items: center;
+				h2 {
+					font-family: 'Nerko One', cursive;
+					font-size: 30px;
+					color: #fff;
+				}
+			}
+		}
+		.li-item2 {
+			@include width(40%, 44px);
+			@extend %garanti;
+			display: flex;
+			//background-color: green;
+			border: 2px solid gray;
+			border-radius: $border-r;
+			.search-image {
+				@include width(9%, 44px);
+			}
+			.search-area {
+				@include width(82%, 44px);
+				font-size: medium;
+			}
+			.search-btn {
+				@include width(10%, 44px);
+				background-color: #a2a68f;
+				color: #fff;
+				font-weight: 900;
+				letter-spacing: 4px;
+				text-shadow: 3px 3px 2px black;
+			}
+		}
+		.li-item3 {
+			@extend %garanti;
+			display: flex;
+			@include width(15%, 44px);
+			background-color: #fff;
+			border: 2px solid gray;
+			border-radius: $border-r;
+
+			img {
+				@extend %garanti;
+				@include width(24%, 44px);
+			}
+			a {
+				@include width(38%, 44px);
+				padding: 0 4px;
+				padding-top: 7px;
+				border-left: $border;
+				span {
+					margin: 0px;
+				}
+			}
+		}
+		.li-item4 {
+			@extend %garanti;
+			display: flex;
+			@include width(12%, 44px);
+			background-color: #fff;
+			border: 2px solid gray;
+			border-radius: $border-r;
+			a {
+				@extend %garanti;
+				@include width(100%, 44px);
+				display: flex;
+				img {
+					@include width(30%, 44px);
+					@extend %garanti;
+				}
+				span {
+					@include width(70%, 44px);
+					padding: 0 8px;
+					padding-top: 10px;
+				}
+			}
+		}
+	}
+}

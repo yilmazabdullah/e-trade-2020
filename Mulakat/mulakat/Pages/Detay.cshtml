@@ -1,0 +1,93 @@
+﻿@page
+@model mulakat.Pages.DetayModel
+@{
+}
+
+        <div id="detay-main-alani">
+            <div class="detay-resim-alani"><img id="gelenid" src="" alt="" height="592" width="400" /></div>
+            <div class="detay-ozellik-alani">
+                <h2>Ürün adı</h2>
+                <h2 id="urun-adi-h2"></h2>
+                <h1>Fiyatı</h1>
+                <h1 id="urun-fiyat"></h1>
+                <div class="sepet-adet">
+                    <img onclick="azalt()" src="../image/min.png" width="48" height="48" />
+                    <input type="text" placeholder="0" /><img src="../image/plus.png"
+                                                              width="48"
+                                                              height="48"
+                                                              onclick="art()" />
+                </div>
+                <div class="fiyat"><h1></h1></div>
+                <div class="resim-buton">
+                    <div class="detay-diger-resimler-mini">
+                        <img src="../image/urunler/1.jpg" alt="" width="100" height="148" />
+                        <img src="../image/urunler/10483149275186.jpg" alt="" width="100" height="148" />
+                        <img src="../image/urunler/10483149307954.jpg" alt="" width="100" height="148" />
+                    </div>
+                    <button>Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </main>
+  
+
+    <script>
+			//asp ye aşina olmadığım için manuel yaptım. gelen id yi yakalıyorum.
+			var gelen = location.search;
+			//id için
+			var desen = /\d/;
+			var sonuc = gelen.match(desen);
+			var son = sonuc % 6;
+			if (son == 0) {
+				son = 6;
+			}
+			//isim için
+			var isim_desen = /\d{6}/;
+			var isim_sonuc = gelen.match(isim_desen);
+			var urun_adi = document.getElementById('urun-adi-h2');
+            urun_adi.innerHTML = isim_sonuc + '  Erkek T-Shirt';
+
+			//fiyat için
+			var isim_desen = /\d{2}/g;
+			var isim_sonuc = gelen.match(isim_desen);
+			var isim_son = isim_sonuc[isim_sonuc.length - 1];
+			var urun_adi = document.getElementById('urun-fiyat');
+			urun_adi.innerHTML = isim_son + ' TL';
+
+			//
+			var imag = document.getElementById('gelenid');
+			imag.setAttribute('src', '../image/urunler/' + son + '.jpg');
+		
+			//header yükselik hesabı
+			var head = document.getElementsByTagName('header')[0];
+			var yukseklik_header = head.offsetHeight;
+			//main yukseklik ayarlama
+			var mains = document.getElementsByTagName('main')[0];
+			mains.style.top = yukseklik_header + 20 + 'px';
+			//footer yukselik ayarlama
+			var sonuc = mains.clientHeight + yukseklik_header + 20;
+			var foot = document.getElementsByTagName('footer')[0];
+			foot.style.top = sonuc + 20 + 'px';
+
+			//sepete ekleme
+			var fiyatbilgisi = document.querySelector('.fiyat h1');
+			var sepet = document.querySelector('.sepet-adet input');
+			var islem = sepet.value;
+			function azalt() {
+				if (islem == 0) {
+					alert('Sepete Ekleme yapınız');
+				} else {
+					islem = eval(islem - 1);
+					sepet.value = islem;
+					fiyatbilgisi.innerHTML = islem * isim_son + ' TL';
+				}
+			}
+			function art() {
+				islem = eval(islem + 1);
+				sepet.value = islem;
+				fiyatbilgisi.innerHTML = islem * isim_son + ' TL';
+			}
+			//alert(isim_son);
+			//son fiyatbilgisi
+    </script>
+

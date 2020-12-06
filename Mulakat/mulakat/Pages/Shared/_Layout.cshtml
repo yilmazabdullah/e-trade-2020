@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - mulakat</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="nav-ust-alan">
+            <ul>
+                <div class="li-item1">
+                    <a asp-page="Index">
+                        <img src="../image/logo.png" alt="logo" width="48" height="48" />
+                        <h2>Mazaka Yazılım</h2>
+                    </a>
+                </div>
+                <div class="li-item2">
+                    <img class="search-image"
+                         src="../image/search.png"
+                         alt="arama simgesi"
+                         width="44"
+                         height="44" />
+                    <input class="search-area"
+                           type="text"
+                           name="search-area"
+                           id="search-area"
+                           placeholder="Ürün arama alanı" />
+                    <input class="search-btn" type="button" value="Ara" />
+                </div>
+                <div class="li-item3">
+                    <img src="../image/person-image.png" width="48" height="48" alt="Resim gelecek" />
+                    <a href="#"><span>Giriş </span></a>
+                    <a href="#"><span>Üye Ol</span></a>
+                </div>
+                <div class="li-item4">
+                    <a href="#">
+                        <img src="../image/cart.png" width="48" height="48" alt="Resim gelecek" />
+                        <span>Sepetim</span>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+
+    <footer>
+        <div class="footer-alani">
+            <div class="footer-ust-alan">
+                <div>
+                    <h3 style="text-align: left">Bugun Evinizde</h3>
+                    <img src="../image/kargo-paket.png" alt="resim" />
+                    <p>saat 13:00'a kadar verdiğiniz siparişler aynı gün kargoda</p>
+                </div>
+                <div>
+                    <h3 style="text-align: center">Güvenli Alışveriş</h3>
+                    <img src="../image/Microsoft-Security-Essentials-icon.png" alt="securi" />
+
+                    <p>Sepetiniz bizimle güvende!!</p>
+                </div>
+                <div>
+                    <h3 style="text-align: center">Kolay İade</h3>
+                    <img src="../image/dollar-rotation-icon.png" alt="iade" />
+                    <p>Memnun kalmadığınız takdirde kolay iade şartları</p>
+                </div>
+            </div>
+            <div class="footer-alt-alan">
+                <div class="copy-right">&copy;Her hakkı saklıdır.</div>
+                <div class="bize-ulasin">
+                    <h3 style="text-align: center">Bize Ulaşın</h3>
+                    <div>
+                        <a href="#"> <img src="../image/bize-ulasin/YouTube-icon.png" alt="youtube" /></a>
+                        <a href="#"> <img src="../image/bize-ulasin/social-google-box-icon.png" alt="google" /></a>
+                        <a href="#">
+                            <img src="../image/bize-ulasin/Web-Twitter-alt-2-Metro-icon.png" alt="twitter" />
+                        </a>
+                        <a href="#"> <img src="../image/bize-ulasin/facebook-icon.png" alt="facebook" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+            //header yükselik hesabı
+         var head = document.getElementsByTagName("header")[0];
+         var yukseklik_header = head.offsetHeight;
+
+         //main yukseklik ayarlama
+         var mains = document.getElementsByTagName("main")[0];
+         mains.style.top=yukseklik_header+20+"px";
+
+         //footer yukselik ayarlama
+        var sonuc=mains.clientHeight + yukseklik_header+20;
+        var foot = document.getElementsByTagName("footer")[0];
+        foot.style.top = sonuc + 20 + "px";
+
+        ///
+        var fiyatbilgisi = document.querySelector('.fiyat h1');
+        var sepet = document.querySelector('.sepet-adet input');
+        var islem = sepet.value;
+        function azalt() {
+            if (islem == 0) {
+                alert('Sepete Ekleme yapınız');
+            } else {
+                islem = eval(islem - 1);
+                sepet.value = islem;
+                fiyatbilgisi.innerHTML = islem * isim_son + ' TL';
+            }
+        }
+        function art() {
+            islem = eval(islem + 1);
+            sepet.value = islem;
+            fiyatbilgisi.innerHTML = islem * isim_son + ' TL';
+        }
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    background-color: #ddd;
+}
+
+.footer-ust-alan div h3, .footer-alt-alan div h3, .footer-ust-alan .main-sag-alan .resim-alani a div p, .footer-alt-alan .main-sag-alan .resim-alani a div p, .main-sag-alan .resim-alani a .footer-ust-alan div p, .main-sag-alan .resim-alani a .footer-alt-alan div p,
+.footer-ust-alan div img,
+.footer-alt-alan div img,
+.footer-ust-alan div p,
+.footer-alt-alan div p, .footer-ust-alan div, .footer-alt-alan div, .footer-ust-alan, .footer-alt-alan, .footer-alani, footer, #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini img, #detay-main-alani .detay-resim-alani, #detay-main-alani .detay-ozellik-alani, #detay-main-alani, .main-sag-alan .resim-alani, .main-sol-alan .sol-alan-baslik div, .main-sag-alan .sol-alan-baslik div, .main-sol-alan .sol-alan-filtre-renk div, .main-sag-alan .sol-alan-filtre-renk div, .main-sol-alan .sol-alan-filtre-beden div, .main-sag-alan .sol-alan-filtre-beden div, .main-sol-alan .sol-alan-filtre-marka div, .main-sag-alan .sol-alan-filtre-marka div, .main-sol-alan .sol-alan-alt-kategoriler div, .main-sag-alan .sol-alan-alt-kategoriler div, .main-sol-alan, .main-sag-alan, #main-alani, main, .nav-ust-alan ul .li-item4 a img, .nav-ust-alan ul .li-item4 a, .nav-ust-alan ul .li-item4, .nav-ust-alan ul .li-item3 img, .nav-ust-alan ul .li-item3, .nav-ust-alan ul .li-item2, .nav-ust-alan ul .li-item1, .nav-ust-alan ul, .nav-ust-alan, header, * {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+header {
+    background-color: #54878f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 14vh;
+    min-height: 14vh;
+    max-height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-ust-alan {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+    .nav-ust-alan ul {
+        display: flex;
+    }
+
+        .nav-ust-alan ul .li-item1 {
+            width: 20%;
+            min-width: 20%;
+            max-width: 20%;
+            height: 48px;
+            min-height: 48px;
+            max-height: 48px;
+        }
+
+            .nav-ust-alan ul .li-item1 a {
+                display: flex;
+                align-items: center;
+            }
+
+                .nav-ust-alan ul .li-item1 a h2 {
+                    font-family: "Nerko One", cursive;
+                    font-size: 30px;
+                    color: #fff;
+                }
+
+        .nav-ust-alan ul .li-item2 {
+            width: 40%;
+            min-width: 40%;
+            max-width: 40%;
+            height: 44px;
+            min-height: 44px;
+            max-height: 44px;
+            display: flex;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+
+            .nav-ust-alan ul .li-item2 .search-image {
+                width: 9%;
+                min-width: 9%;
+                max-width: 9%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+            }
+
+            .nav-ust-alan ul .li-item2 .search-area {
+                width: 82%;
+                min-width: 82%;
+                max-width: 82%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+                font-size: medium;
+            }
+
+            .nav-ust-alan ul .li-item2 .search-btn {
+                width: 10%;
+                min-width: 10%;
+                max-width: 10%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+                background-color: #a2a68f;
+                color: #fff;
+                font-weight: 900;
+                letter-spacing: 4px;
+                text-shadow: 3px 3px 2px black;
+            }
+
+        .nav-ust-alan ul .li-item3 {
+            display: flex;
+            width: 15%;
+            min-width: 15%;
+            max-width: 15%;
+            height: 44px;
+            min-height: 44px;
+            max-height: 44px;
+            background-color: #fff;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+
+            .nav-ust-alan ul .li-item3 img {
+                width: 24%;
+                min-width: 24%;
+                max-width: 24%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+            }
+
+            .nav-ust-alan ul .li-item3 a {
+                width: 38%;
+                min-width: 38%;
+                max-width: 38%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+                padding: 0 4px;
+                padding-top: 7px;
+                border-left: 1px solid #85929e;
+            }
+
+                .nav-ust-alan ul .li-item3 a span {
+                    margin: 0px;
+                }
+
+        .nav-ust-alan ul .li-item4 {
+            display: flex;
+            width: 12%;
+            min-width: 12%;
+            max-width: 12%;
+            height: 44px;
+            min-height: 44px;
+            max-height: 44px;
+            background-color: #fff;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+
+            .nav-ust-alan ul .li-item4 a {
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                height: 44px;
+                min-height: 44px;
+                max-height: 44px;
+                display: flex;
+            }
+
+                .nav-ust-alan ul .li-item4 a img {
+                    width: 30%;
+                    min-width: 30%;
+                    max-width: 30%;
+                    height: 44px;
+                    min-height: 44px;
+                    max-height: 44px;
+                }
+
+                .nav-ust-alan ul .li-item4 a span {
+                    width: 70%;
+                    min-width: 70%;
+                    max-width: 70%;
+                    height: 44px;
+                    min-height: 44px;
+                    max-height: 44px;
+                    padding: 0 8px;
+                    padding-top: 10px;
+                }
+
+/*
+@include width(20%, 48px);
+@extend %garanti;
+*/
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.footer-ust-alan div h3, .footer-alt-alan div h3, .footer-ust-alan .main-sag-alan .resim-alani a div p, .footer-alt-alan .main-sag-alan .resim-alani a div p, .main-sag-alan .resim-alani a .footer-ust-alan div p, .main-sag-alan .resim-alani a .footer-alt-alan div p,
+.footer-ust-alan div img,
+.footer-alt-alan div img,
+.footer-ust-alan div p,
+.footer-alt-alan div p, .footer-ust-alan div, .footer-alt-alan div, .footer-ust-alan, .footer-alt-alan, .footer-alani, footer, #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini img, #detay-main-alani .detay-resim-alani, #detay-main-alani .detay-ozellik-alani, #detay-main-alani, .main-sag-alan .resim-alani, .main-sol-alan .sol-alan-baslik div, .main-sag-alan .sol-alan-baslik div, .main-sol-alan .sol-alan-filtre-renk div, .main-sag-alan .sol-alan-filtre-renk div, .main-sol-alan .sol-alan-filtre-beden div, .main-sag-alan .sol-alan-filtre-beden div, .main-sol-alan .sol-alan-filtre-marka div, .main-sag-alan .sol-alan-filtre-marka div, .main-sol-alan .sol-alan-alt-kategoriler div, .main-sag-alan .sol-alan-alt-kategoriler div, .main-sol-alan, .main-sag-alan, #main-alani, main, *, header, .nav-ust-alan, .nav-ust-alan ul, .nav-ust-alan ul .li-item1, .nav-ust-alan ul .li-item2, .nav-ust-alan ul .li-item3, .nav-ust-alan ul .li-item3 img, .nav-ust-alan ul .li-item4, .nav-ust-alan ul .li-item4 a, .nav-ust-alan ul .li-item4 a img {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    left: 0;
+}
+
+#main-alani {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 50px;
+}
+
+.main-sol-alan, .main-sag-alan {
+    background-color: #fff;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    border: 1px solid #85929e;
+}
+
+    .main-sol-alan .sol-alan-baslik, .main-sag-alan .sol-alan-baslik, .main-sol-alan .sol-alan-filtre-renk, .main-sag-alan .sol-alan-filtre-renk, .main-sol-alan .sol-alan-filtre-beden, .main-sag-alan .sol-alan-filtre-beden, .main-sol-alan .sol-alan-filtre-marka, .main-sag-alan .sol-alan-filtre-marka, .main-sol-alan .sol-alan-alt-kategoriler, .main-sag-alan .sol-alan-alt-kategoriler {
+        padding: 20px;
+        border-bottom: 1px solid #85929e;
+    }
+
+        .main-sol-alan .sol-alan-baslik div, .main-sag-alan .sol-alan-baslik div, .main-sol-alan .sol-alan-filtre-renk div, .main-sag-alan .sol-alan-filtre-renk div, .main-sol-alan .sol-alan-filtre-beden div, .main-sag-alan .sol-alan-filtre-beden div, .main-sol-alan .sol-alan-filtre-marka div, .main-sag-alan .sol-alan-filtre-marka div, .main-sol-alan .sol-alan-alt-kategoriler div, .main-sag-alan .sol-alan-alt-kategoriler div {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 240px;
+            min-height: 240px;
+            max-height: 240px;
+            overflow-y: scroll;
+        }
+
+            .main-sol-alan .sol-alan-baslik div span, .main-sag-alan .sol-alan-baslik div span, .main-sol-alan .sol-alan-filtre-renk div span, .main-sag-alan .sol-alan-filtre-renk div span, .main-sol-alan .sol-alan-filtre-beden div span, .main-sag-alan .sol-alan-filtre-beden div span, .main-sol-alan .sol-alan-filtre-marka div span, .main-sag-alan .sol-alan-filtre-marka div span, .main-sol-alan .sol-alan-alt-kategoriler div span, .main-sag-alan .sol-alan-alt-kategoriler div span {
+                font-weight: bold;
+            }
+
+            .main-sol-alan .sol-alan-baslik div h4, .main-sag-alan .sol-alan-baslik div h4, .main-sol-alan .sol-alan-filtre-renk div h4, .main-sag-alan .sol-alan-filtre-renk div h4, .main-sol-alan .sol-alan-filtre-beden div h4, .main-sag-alan .sol-alan-filtre-beden div h4, .main-sol-alan .sol-alan-filtre-marka div h4, .main-sag-alan .sol-alan-filtre-marka div h4, .main-sol-alan .sol-alan-alt-kategoriler div h4, .main-sag-alan .sol-alan-alt-kategoriler div h4 {
+                margin-bottom: 10px;
+                padding-left: 20px;
+            }
+
+        .main-sol-alan .sol-alan-baslik input, .main-sag-alan .sol-alan-baslik input, .main-sol-alan .sol-alan-filtre-renk input, .main-sag-alan .sol-alan-filtre-renk input, .main-sol-alan .sol-alan-filtre-beden input, .main-sag-alan .sol-alan-filtre-beden input, .main-sol-alan .sol-alan-filtre-marka input, .main-sag-alan .sol-alan-filtre-marka input, .main-sol-alan .sol-alan-alt-kategoriler input, .main-sag-alan .sol-alan-alt-kategoriler input {
+            border: 1px solid #85929e;
+            border-radius: 10px;
+            padding: 4px 10px;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .main-sol-alan .sol-alan-alt-kategoriler ul li h4, .main-sag-alan .sol-alan-alt-kategoriler ul li h4 {
+            margin-bottom: 10px;
+        }
+
+    .main-sag-alan .resim-alani {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        background-color: #fff;
+    }
+
+        .main-sag-alan .resim-alani a div img {
+            width: 200px;
+            min-width: 200px;
+            max-width: 200px;
+            height: 296px;
+            min-height: 296px;
+            max-height: 296px;
+            padding: 20px;
+            padding-bottom: 4px;
+            transition: all 0.7s ease;
+        }
+
+            .main-sag-alan .resim-alani a div img:hover {
+                transform: scale(1.5);
+            }
+
+        .main-sag-alan .resim-alani a div h3, .main-sag-alan .resim-alani a div p {
+            padding-left: 20px;
+        }
+
+        .main-sag-alan .resim-alani a div p {
+            font-weight: 700;
+        }
+
+#detay-main-alani {
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border: 1px solid #85929e;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray, -5px 5px 5px gray, 5px -5px 5px gray, -5px -5px 5px gray;
+}
+
+    #detay-main-alani .detay-resim-alani, #detay-main-alani .detay-ozellik-alani {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+        position: relative;
+    }
+
+        #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini {
+            width: 80%;
+            min-width: 80%;
+            max-width: 80%;
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+            display: inline;
+            border: 1px;
+        }
+
+            #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini img {
+                transition: all 0.4s ease-in-out;
+            }
+
+                #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini img:hover {
+                    border: 1px solid #85929e;
+                    transform: scale(2);
+                    border-radius: 10px;
+                }
+
+        #detay-main-alani .detay-ozellik-alani .sepet-adet {
+            width: 70%;
+            min-width: 70%;
+            max-width: 70%;
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            margin: 20px 0;
+        }
+
+            #detay-main-alani .detay-ozellik-alani .sepet-adet input {
+                width: 50px;
+                min-width: 50px;
+                max-width: 50px;
+                height: 46px;
+                min-height: 46px;
+                max-height: 46px;
+                border: 1px solid #85929e;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+        #detay-main-alani .detay-ozellik-alani .resim-buton {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+        }
+
+        #detay-main-alani .detay-ozellik-alani button {
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+            border: 2px solid #85929e;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            transition: all 0.5s ease-out;
+        }
+
+            #detay-main-alani .detay-ozellik-alani button:hover {
+                border: 2px solid #fff;
+                background-color: #000;
+                color: #fff;
+                font-weight: 700;
+            }
+
+        #detay-main-alani .detay-ozellik-alani .fiyat h1 {
+            width: 50%;
+            min-width: 50%;
+            max-width: 50%;
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+            padding-left: 20px;
+        }
+
+/*
+@include width(20%, 48px);
+@extend %garanti;
+*/
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.footer-ust-alan div h3, .footer-alt-alan div h3, .footer-ust-alan .main-sag-alan .resim-alani a div p, .footer-alt-alan .main-sag-alan .resim-alani a div p, .main-sag-alan .resim-alani a .footer-ust-alan div p, .main-sag-alan .resim-alani a .footer-alt-alan div p,
+.footer-ust-alan div img,
+.footer-alt-alan div img,
+.footer-ust-alan div p,
+.footer-alt-alan div p, .footer-ust-alan div, .footer-alt-alan div, .footer-ust-alan, .footer-alt-alan, .footer-alani, footer, *, header, .nav-ust-alan, .nav-ust-alan ul, .nav-ust-alan ul .li-item1, .nav-ust-alan ul .li-item2, .nav-ust-alan ul .li-item3, .nav-ust-alan ul .li-item3 img, .nav-ust-alan ul .li-item4, .nav-ust-alan ul .li-item4 a, .nav-ust-alan ul .li-item4 a img, main, #main-alani, .main-sol-alan, .main-sol-alan .sol-alan-baslik div, .main-sol-alan .sol-alan-alt-kategoriler div, .main-sol-alan .sol-alan-filtre-marka div, .main-sol-alan .sol-alan-filtre-beden div, .main-sol-alan .sol-alan-filtre-renk div, .main-sag-alan, .main-sag-alan .sol-alan-baslik div, .main-sag-alan .sol-alan-alt-kategoriler div, .main-sag-alan .sol-alan-filtre-marka div, .main-sag-alan .sol-alan-filtre-beden div, .main-sag-alan .sol-alan-filtre-renk div, .main-sag-alan .resim-alani, #detay-main-alani, #detay-main-alani .detay-resim-alani, #detay-main-alani .detay-ozellik-alani, #detay-main-alani .detay-ozellik-alani .detay-diger-resimler-mini img {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    left: 0;
+    background-color: #54878f;
+}
+
+.footer-alani {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    padding: 20px 0;
+}
+
+.footer-ust-alan, .footer-alt-alan {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+    .footer-ust-alan div, .footer-alt-alan div {
+        width: 20%;
+        min-width: 20%;
+        max-width: 20%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+    }
+
+        .footer-ust-alan div h3, .footer-alt-alan div h3, .footer-ust-alan .main-sag-alan .resim-alani a div p, .footer-alt-alan .main-sag-alan .resim-alani a div p, .main-sag-alan .resim-alani a .footer-ust-alan div p, .main-sag-alan .resim-alani a .footer-alt-alan div p,
+        .footer-ust-alan div img,
+        .footer-alt-alan div img,
+        .footer-ust-alan div p,
+        .footer-alt-alan div p {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+        }
+
+.footer-alt-alan {
+    border-top: 1px solid #85929e;
+    padding-top: 10px;
+}
+
+    .footer-alt-alan .copy-right {
+        padding-top: 50px;
+    }
+
+    .footer-alt-alan .bize-ulasin div {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+    }
+
+        .footer-alt-alan .bize-ulasin div a {
+            padding-top: 4px;
+        }
+
+            .footer-alt-alan .bize-ulasin div a img {
+                width: 60%;
+                min-width: 60%;
+                max-width: 60%;
+                height: auto;
+                min-height: auto;
+                max-height: auto;
+                clip-path: circle();
+            }
+
+/*# sourceMappingURL=style.css.map */

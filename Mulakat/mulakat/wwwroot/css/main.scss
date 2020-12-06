@@ -1,0 +1,173 @@
+/*
+@include width(20%, 48px);
+@extend %garanti;
+*/
+@import './frames.scss';
+
+main {
+	position: absolute;
+	@include width(100%, auto);
+	@extend %garanti;
+	//top: 16vh;
+	left: 0;
+}
+#main-alani {
+	@include width(90%, auto);
+	@extend %garanti;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 50px;
+}
+
+.main-sol-alan {
+	background-color: #fff;
+	@include width(100%, auto);
+	@extend %garanti;
+	//padding: 10px;
+	border: $border;
+	//border-radius: $border-r;
+	.sol-alan-baslik {
+		//@extend %garanti;
+		padding: 20px;
+		border-bottom: $border;
+
+		div {
+			@include width(100%, 240px);
+			@extend %garanti;
+			overflow-y: scroll;
+			span {
+				font-weight: bold;
+			}
+			h4 {
+				margin-bottom: 10px;
+				padding-left: 20px;
+			}
+		}
+		input {
+			//@extend %garanti;
+			border: $border;
+			border-radius: $border-r;
+			padding: 4px 10px;
+			margin: 10px 0;
+			font-weight: 600;
+		}
+	}
+	.sol-alan-alt-kategoriler {
+		@extend .sol-alan-baslik;
+		ul li h4 {
+			margin-bottom: 10px;
+		}
+	}
+	.sol-alan-filtre-marka {
+		@extend .sol-alan-baslik;
+	}
+	.sol-alan-filtre-beden {
+		@extend .sol-alan-baslik;
+	}
+	.sol-alan-filtre-renk {
+		@extend .sol-alan-baslik;
+	}
+}
+.main-sag-alan {
+	@extend .main-sol-alan;
+	//background-color: yellow;
+	.resim-alani {
+		@extend %garanti;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+		background-color: #fff;
+		a div {
+			img {
+				@include width(200px, 296px);
+				padding: 20px;
+				padding-bottom: 4px;
+				transition: all 0.7s ease;
+				&:hover {
+					transform: scale(1.5);
+				}
+			}
+			h3 {
+				padding-left: 20px;
+			}
+			p {
+				@extend h3;
+				font-weight: 700;
+			}
+		}
+	}
+}
+///Detay sayfası
+
+#detay-main-alani {
+	@include width(60%, auto);
+	@extend %garanti;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #fff;
+	border: $border;
+	border-radius: $border-r;
+	box-shadow: 5px 5px 5px gray, -5px 5px 5px gray, 5px -5px 5px gray, -5px -5px 5px gray;
+	.detay-resim-alani {
+		@include width(100%, auto);
+		@extend %garanti;
+		position: relative;
+	}
+	.detay-ozellik-alani {
+		@extend .detay-resim-alani;
+		.detay-diger-resimler-mini {
+			@include width(80%, auto);
+			display: inline;
+			border: 1px;
+			img {
+				@extend %garanti;
+				transition: all 0.4s ease-in-out;
+				&:hover {
+					border: $border;
+					transform: scale(2);
+					border-radius: $border-r;
+				}
+			}
+		}
+		.sepet-adet {
+			//border: $border;
+			@include width(70%, auto);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: 0;
+			margin: 20px 0;
+			input {
+				@include width(50px, 46px);
+				border: $border;
+				border-radius: $border-r;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+		}
+		.resim-buton {
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+		}
+		button {
+			@include width(90%, auto);
+			border: 2px solid $border-color;
+			padding: 10px;
+			border-radius: $border-r;
+			font-size: 20px;
+			transition: all 0.5s ease-out;
+			&:hover {
+				border: 2px solid #fff;
+				background-color: #000;
+				color: #fff;
+				font-weight: 700;
+			}
+		}
+		.fiyat h1 {
+			@include width(50%, auto);
+			padding-left: 20px;
+		}
+	}
+}

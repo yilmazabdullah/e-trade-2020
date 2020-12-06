@@ -1,0 +1,48 @@
+//Colors
+$first-color: #54878f;
+$second-color: #7bc0a3;
+$third-color: #e6e696;
+$forth-color: #d5ab9c;
+$border: 1px solid #85929e;
+$border-color: #85929e;
+$black: #000;
+
+//font family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+$font-f: 'Poppins', sans-serif;
+* {
+	font-family: $font-f;
+	@extend %garanti;
+}
+body {
+	background-color: #ddd;
+}
+//list style
+$cizme: none;
+$listless: none;
+//border
+$border-r: 10px;
+//Metots
+//garanti
+%garanti {
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0 auto;
+	text-decoration: none;
+	list-style: none;
+	color: $black;
+	//overflow: hidden;
+}
+//width
+@mixin width($w, $h) {
+	width: $w;
+	min-width: $w;
+	max-width: $w;
+	height: $h;
+	min-height: $h;
+	max-height: $h;
+}
+//css
+//header
